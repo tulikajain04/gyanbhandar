@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url("static/home.jpg");
+            }
+        </style>
+    </head>
+    <body style=" margin-left: 10%; margin-top: 10%;">
+        {% for i,j in data.items() %}
+            <h1 style="color: maroon">{{i}} : {{j}}</h1>
+        {% endfor %}
+        <h1>Booked Successfully!!!</h1>
+
+
+    </body>
+</html>

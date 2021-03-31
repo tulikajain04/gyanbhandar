@@ -1,0 +1,13 @@
+<html>
+    <style>
+        body{
+            background-image: url("static/home.jpg");
+        }
+    </style>
+    <body style="margin-top: 10%; margin-left: 10%;">
+        {% for i,j in data.items() %}
+            <h1 style="color: rgb(109, 3, 3);">{{i}} : {{j}}</h1>
+        {% endfor %}
+
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <style>
+            body{
+                background: url("static/3.jpg");
+                background-size: cover;
+                color: #000;
+                font: 14px Arial;
+                margin: 0 auto;
+                padding: 0;
+                position: relative;
+                
+            }
+            form{
+                margin-left: 20%;
+                margin-top: 10%;
+                border: bisque;
+                
+            }
+            h1{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: xx-large;
+                color: bisque;
+                background-color: chocolate;
+                width: 200%;
+                margin-left: 0%;
+                padding-left: 20%;
+                margin-top: 5%;
+            }
+            
+            label{
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(3, 53, 53);
+                font-size: x-large;
+                width:180px;
+                clear:left;
+                text-align:right;
+                padding-right:10px;
+                float: left;
+            }
+            input{
+                width: 200px;
+                position: relative;
+                height: 30px;
+                float: left;
+            }
+        </style>
+    </head>   
+        
+    <body>
+
+        <h1>Book your slot for Demo- </h1>
+        <div class="container">
+            <form action="/demo/afterdemo/" method="POST">
+              <label for="name"><b>Name</b></label>
+              <input type="text" name="name" required><br><br><br>
+              
+              <label for="text"><b>Course</b></label>
+              <input type="text" placeholder="course name" name="course" id="course" required ><br><br><br>
+          
+              <label for="Date"><b>Date</b></label>
+              <input type="date" placeholder="DD/MM/YY" name="date" id="date" required><br><br><br>
+          
+              <label for="time"><b>Time</b></label>
+              <input type="time" placeholder="00:00" name="time" id="time" required><br><br><br>
+          
+              
+
+              
+              
+              <button type="submit" class="submit" style="margin-left: 20%; font-size: xx-large; width: 150px; height: 50px;">Submit</button>
+            
+            </form>  
+        </div>
+    </body>
+</html>
